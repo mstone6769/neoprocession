@@ -1,9 +1,9 @@
 {
-  "name": "foundation-libsass-template",
+  "name": "Neo Procession Website",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zurb/foundation-libsass-template.git"
+    "url": "https://github.com/mstone6769/neoprocession.git"
   },
   "devDependencies": {
     "node-sass": "~2.0.1",
