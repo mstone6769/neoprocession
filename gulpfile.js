@@ -23,7 +23,7 @@ gulp.task('fileinclude', function() {
 });
 
 gulp.task('copyAssets', function() {
-  gulp.src(['./bower_components/**/*', './images/*', './js/*', './documents/*'], { 'base' : '.' })
+  gulp.src(['./images/*', './js/*', './documents/*'], { 'base' : '.' })
     .pipe(gulp.dest('./site/'));
 });
 
