@@ -1,0 +1,7 @@
+.main {
+	display: block;
+	padding-top: 1rem;
+}
+.subheading {
+	@extend h3;
+}

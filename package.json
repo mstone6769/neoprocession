@@ -1,14 +1,19 @@
 {
-  "name": "Neo Procession Website",
+  "name": "neo-procession-website",
   "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/mstone6769/neoprocession.git"
   },
   "devDependencies": {
-    "node-sass": "~2.0.1",
+    "browser-sync": "^2.8.2",
     "grunt": "~0.4.5",
     "grunt-contrib-watch": "~0.6.1",
-    "grunt-sass": "~0.18.0"
+    "grunt-sass": "~0.18.0",
+    "gulp": "^3.9.0",
+    "gulp-file-include": "^0.13.7",
+    "gulp-minify-css": "^1.2.0",
+    "gulp-sass": "^2.0.4",
+    "node-sass": "~2.0.1"
   }
 }
