@@ -1,45 +1,59 @@
-@@include('./includes/header.html')
-    <div class="page-block">
-      <section class="section-block">
+@@include('./includes/header.html', {
+    "bodyClass": "home"})
+    
+    <section class="section-lead">
+      <div class="page-block">
         <h2 class="section-subheading">WHY are we?</h2>
-        <p>There are hundreds of insurance and financial services agencies...but we wanted to be one with a heart, who proves it with how we act relationally and financially.</p>
-      </section>
-      <section class="section-block">
+        <p class="lead">There are hundreds of insurance and financial services agencies...but we wanted to be one with a heart, who proves it with how we act relationally and financially.</p>
+      </div>
+    </section>
+    <div class="page-block">
+      <section class="section-block first">
         <h2 class="section-subheading">WHO are we?</h2>
-        <p>Enter NeoProcession, Inc., a new way to advance where everyone wins.  We sell insurance and financial services, but we make a little less than our competitors by giving a portion of our commissions to those less fortunate.</p>
+        <p class="lead">Enter NeoProcession, Inc., a new way to advance where everyone wins.  We sell insurance and financial services, but we make a little less than our competitors by giving a portion of our commissions to those less fortunate.</p>
         <p>If you buy a policy from us, a portion of the commissions we receive will be donated to one of the organizations below, and you get to choose which one!</p>
-        <ol>
+        <ol class="small-block-grid-1 medium-block-grid-2 large-block-grid-5">
           <li>
-            <a href="http://www.kiva.org/about/how">Kiva</a>
-            - a micro-loan website for people in underdeveloped countries
+            <h3 class="block-subheading"><a href="http://www.kiva.org/about/how">Kiva</a></h3>
+            A micro-loan website for people in underdeveloped countries
           </li>
           <li>
-            <a href="http://www.charitywater.org/whywater/">Charity:Water</a>
-             - an organization who invests 100% of the money donated to developing clean water in underdeveloped areas of the world
+            <h3 class="block-subheading"><a href="http://www.charitywater.org/whywater/">Charity:Water</a></h3>
+            An organization who invests 100% of the money donated to developing clean water in underdeveloped areas of the world
           </li>
           <li>
-            <a href="http://worldvision.org/about-us/how-we-work">World Vision</a>
-            – a longstanding organization well known for helping individuals and villages grow over generations from poverty and illness to health and education
+            <h3 class="block-subheading"><a href="http://worldvision.org/about-us/how-we-work">World Vision</a></h3>
+            A longstanding organization well known for helping individuals and villages grow over generations from poverty and illness to health and education
           </li>
           <li>
-            <a href="http://aspca.org/about-us">ASPCA</a>
-            - longstanding organization well known for rescuing and protecting, as well as providing an advocates voice for animals
+            <h3 class="block-subheading"><a href="http://aspca.org/about-us">ASPCA</a></h3>
+            Longstanding organization well known for rescuing and protecting, as well as providing an advocates voice for animals
           </li>
           <li>
-            <a href="http://NRDC.org/">Natural Resources Defense Council</a> 
-            - one of the most respected organizations for protecting and advocating for our planet's nature and her resources
+            <h3 class="block-subheading"><a href="http://NRDC.org/">Natural Resources Defense Council</a></h3> 
+            One of the most respected organizations for protecting and advocating for our planet's nature and her resources
           </li>
         </ol>
       </section>
-      <section class="section-block">
-        <h2 class="section-subheading">WHAT are we?</h2>
-        <p>Only one of the most innovative and creative firms in the industry, providing products and services that most agents do not even know exist yet.  As a matter of fact, just for reading this far, <a href="documents/SaveRx-Flyer-150817.pub">you recieve a free gift!</a></p>
-        <p>Want to try out the best?!  <a href="contact.html">Contact one of our staff.</a>  You’ll get top drawer products at fantastic prices and you’ll help others while you’re at it!</p>
-      </section>
-      <section class="section-block">
-        <h2 class="section-subheading">FUN</h2>
-        <a href="auto-driving-suggestions.html">Common sense auto driving suggestions from our fearless leader</a>
-        <p>Our president/CEO has driven hundreds of thousands of miles across this great land of ours over the years and these short videos are some of his suggestions which, if observed, would also make the world a better place.</p>
-      </section>
     </div>
+    <div class="row">
+      <div class="columns medium-6 large-8">
+        <section class="section-block">
+          <h2 class="section-subheading">WHAT are we?</h2>
+          <p>Only one of the most innovative and creative firms in the industry, providing products and services that most agents do not even know exist yet.  As a matter of fact, just for reading this far, <a href="documents/SaveRx-Flyer-150817.pub">you recieve a free gift!</a></p>
+          <p>Want to try out the best?!  <a href="contact.html">Contact one of our staff.</a>  You’ll get top drawer products at fantastic prices and you’ll help others while you’re at it!</p>
+          <a href="contact.html" class="button">Contact Us</a>
+        </section>
+      </div>
+      <div class="columns medium-6 large-4">
+        <section class="section-block">
+          <h2 class="section-subheading">FUN</h2>
+          <a href="auto-driving-suggestions.html">Common sense auto driving suggestions from our fearless leader</a>
+          <p>Our president/CEO has driven hundreds of thousands of miles across this great land of ours over the years and these short videos are some of his suggestions which, if observed, would also make the world a better place.</p>
+        </section>
+      </div>
+    </div>
+      
+      
+    
 @@include('./includes/footer.html')

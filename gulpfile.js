@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
   minifyCSS = require('gulp-minify-css'),
   sass = require('gulp-sass'),
-  fileinclude = require('gulp-file-include'),
+  fileInclude = require('gulp-file-include'),
   browserSync = require('browser-sync').create();
 
 gulp.task('compileStyle', function(){
@@ -13,9 +13,9 @@ gulp.task('compileStyle', function(){
     .pipe(browserSync.stream());
 });
 
-gulp.task('fileinclude', function() {
+gulp.task('fileInclude', function() {
   return gulp.src(['./*.html'])
-    .pipe(fileinclude({
+    .pipe(fileInclude({
       prefix: '@@',
       basepath: '@file'
     }))
@@ -27,7 +27,7 @@ gulp.task('copyAssets', function() {
     .pipe(gulp.dest('./site/'));
 });
 
-gulp.task('default', ['compileStyle','fileinclude','copyAssets'], function() {
+gulp.task('default', ['compileStyle','fileInclude','copyAssets'], function() {
   'use strict';
   browserSync.init({
       server: {
@@ -35,6 +35,6 @@ gulp.task('default', ['compileStyle','fileinclude','copyAssets'], function() {
       }
   });
   gulp.watch('scss/*.scss', ['compileStyle']);
-  gulp.watch(['./*.html', './includes/*.html'], ['fileinclude'], browserSync.reload);
+  gulp.watch(['./*.html', './includes/*.html'], ['fileInclude'], browserSync.reload);
   gulp.watch('./site/*.html').on('change', browserSync.reload);
 });
