@@ -36,6 +36,11 @@
 		border: solid rgba(black, 0.2);
 		border-width: 1px 0 0;
 	}
+	@media #{$small-only} {
+		&, p, ul, ol {
+			font-size: 0.8rem;
+		}
+	}
 }
 
 .page-block {
@@ -97,7 +102,7 @@ h1 {
 		@extend h3;
 		color: $secondary-color;
 		text-transform: none;
-		font-family: "gooddog-new",cursive;
+		font-family: "gooddog-new", 'Noteworthy-Bold',cursive;
 		font-style: normal;
 		font-weight: 400;
 	}
