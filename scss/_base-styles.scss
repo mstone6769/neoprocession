@@ -1,9 +1,22 @@
+$container-width: $row-width+5rem;
+
+$container-mq: "#{$screen} and (min-width:#{$container-width})";
+
+body {
+	background-color: gainsboro;
+	@media #{$container-mq} {
+		background-color: $body-bg;
+	}
+}
+
 .container {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: $row-width+20rem;
-	box-shadow: 0 0 1px 0px rgba(black, 0.2);
+	max-width: $container-width;
 	background-color: gainsboro;
+	@media #{$container-mq} {
+		box-shadow: 0 0 1px 0px rgba(black, 0.2);
+	}
 }
 
 .site-logo {
@@ -52,9 +65,10 @@
 }
 
 h1 {
-	font-family: "jaf-facitweb",sans-serif;
+	color: $secondary-color;
+	font-family: "jaf-bernina-sans-condensed",sans-serif;
 	font-style: normal;
-	font-weight: 200;
+	font-weight: 800;
 }
 
 .subheading {
@@ -82,10 +96,14 @@ h1 {
 }
 
 .section-subheading {
-	@extend h5;
-	text-transform: uppercase;
+	@extend h3;
+	color: $secondary-color;
+	text-transform: none;
+	font-family: "gooddog-new", 'Noteworthy-Bold',cursive;
+	font-style: normal;
+	font-weight: 400;
 	padding-top: 0.5rem;
-	color: $steel;
+	
 	&.first {
 		padding-top: 0;
 		margin-top: 0;
@@ -93,11 +111,15 @@ h1 {
 }
 
 .section-lead {
-	background: black url("http://placehold.it/1600x480/000000/333333/?text=folder+mountain+photo") center top no-repeat;
-	background-size: 100% auto;
 	color: white;
-	padding-top: 10rem;
 	padding-bottom: 1rem;
+	background-color: black;
+	background-image: url("../images/mountain2.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 120% auto;
+	$image-size: (745/1475) * 100%;
+	padding-top: calc(#{$image-size} + 1rem);
 	.section-subheading {
 		@extend h3;
 		color: $secondary-color;
@@ -106,15 +128,41 @@ h1 {
 		font-style: normal;
 		font-weight: 400;
 	}
-	@media #{$medium-up} {
-		padding-top: 20rem;
+
+	// @media #{$screen} and (min-width:480px) {
+	// 	padding-top: calc(#{$image-size} - 5rem);
+	// 	padding-left: 33.3333333%;
+	// }
+	
+	
+	
+	@media #{$screen} and (min-width:768px) {
+		padding-top: calc(#{$image-size} - 4rem);
+		padding-left: 50%;
 	}
 	@media #{$large-up} {
-		padding-top: 7rem;
-		padding-bottom: 3rem;
+		// .page-block max-width
+		padding-left: 0;
+		padding-right: 0;
+
+		padding-top: 2rem;
+		box-shadow: 1px 1px 30px inset #FFF;
+		padding-bottom: 12rem;
+		background-size: 100% auto;
+		background-position: center top;
+		color: black;
 		.page-block {
-			padding-left: 30rem;
+			padding-right: 35rem;
 		}
+	}
+}
+
+.container-small {
+	@media #{$large-up} {
+		background-color: rgba(white, 0.9);
+    padding: 1rem;
+    box-shadow: 1px 1px 30px rgba(black, 0.2);
+
 	}
 }
 
@@ -166,6 +214,7 @@ h1 {
 		}
 	}
 }
+
 
 // Pages
 
