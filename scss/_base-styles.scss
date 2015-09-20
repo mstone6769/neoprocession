@@ -2,6 +2,10 @@ $container-width: $row-width+5rem;
 
 $container-mq: "#{$screen} and (min-width:#{$container-width})";
 
+.contain-to-grid {
+	border-top: 3px solid $secondary-color;
+}
+
 body {
 	background-color: gainsboro;
 	@media #{$container-mq} {
@@ -42,6 +46,14 @@ body {
 	background-color: white;
 }
 
+.line {
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+	border-top: 3px solid $secondary-color;
+	border-bottom: 3px solid $primary-color;
+	padding-bottom: 6px;
+}
+
 .site-footer {
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
@@ -72,13 +84,19 @@ h1 {
 }
 
 .subheading {
-	@extend h4;
+	@extend h5;
+	font-weight: bold;
 	margin-top: 2rem;
-	// margin-bottom: 1rem;
+	color: $steel;
+}
+
+.subheading-first {
+	margin-top: 0;
 }
 
 .block-subheading {
 	@extend h5;
+	font-weight: bold;
 }
 
 .section-block {
@@ -137,8 +155,8 @@ h1 {
 	
 	
 	@media #{$screen} and (min-width:768px) {
-		padding-top: calc(#{$image-size} - 4rem);
-		padding-left: 50%;
+		padding-top: calc(#{$image-size} - 5rem);
+		padding-left: 40%;
 	}
 	@media #{$large-up} {
 		// .page-block max-width
