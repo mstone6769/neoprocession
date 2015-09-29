@@ -177,7 +177,7 @@ h1 {
 
 .container-small {
 	@media #{$large-up} {
-		background-color: rgba(white, 0.9);
+		background-color: rgba(white, 0.8);
     padding: 1rem;
     box-shadow: 1px 1px 30px rgba(black, 0.2);
 
