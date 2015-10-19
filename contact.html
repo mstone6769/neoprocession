@@ -1,14 +1,31 @@
-@@include('./includes/header.html')
-      <article class="page-block">
+@@include('./includes/header.html', {
+    "title": "Contact Us"})
+      <section class="page-block">
         <h1>Contact Us</h1>
-        <p><strong>NeoProcession, Inc.</strong><br>
-        1720 Mars Hill Road NW, Suite 8110<br>
-        Acworth, GA  30101</p>
+        <div class="row collapse">
+        <article class="columns medium-6">
+            <h2 class="sr-only">By Mail</h2>
+            <p><strong>NeoProcession, Inc.</strong><br>
+            1720 Mars Hill Road NW, Suite 8110<br>
+            Acworth, GA  30101</p>
+            <h2 class="sr-only">By Phone</h2>
+            <p>(844) 446-3677 Phone / Fax<br>
+            (844) 44NeoPro</p>
+            <h2 class="sr-only">By Email</h2>
+            <p><a href="mailto:sricketts@neoprocession.com">sricketts@neoprocession.com</a></p>
+        </article>
+        <article class="columns medium-6">
+            <h2 class="subheading subheading-first">Connect with us on Social Media</h2>
+            <ul class="no-bullet">
+                <li><a href="https://www.linkedin.com/company/10251903" title="NeoProcession on LinkedIn">LinkedIn: linkedin.com/company/10251903</a></li>
+                <li><a href="https://twitter.com/NeoProcession" title="@neoprocession on Twitter">Twitter: @neoprocession</a></li>
+                <li><a href="https://www.facebook.com/neoprocession" title="NeoProcession on Facebook">Facebook: facebook.com/neoprocession</a></li>
+            </ul>
+            
+            
+        </article>
+        </div>
+        
 
-        <p>(844) 446-3677 Phone / Fax<br>
-        (844) 44NeoPro</p>
-
-        <p><a href="mailto:sricketts@neoprocession.com">sricketts@neoprocession.com</a></p>
-
-      </article>
+      </section>
 @@include('./includes/footer.html')
